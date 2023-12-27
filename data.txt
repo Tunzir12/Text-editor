@@ -1,0 +1,22 @@
+The code you produce must be understandable for other C++ programmers (you can assume that
+this hypothetical programmers has taken this course).
+This means that the standard library must be used in the “intended” way. For example: algorithms
+are used to solve the problems the are designed to solve, appropritate containers are used, exceptions
+are used to handle exceptional situations (so exceptions cannot occur in the program flow of an errorfree execution).
+Lambda functions cannot be too long (around 1-5 lines of code is enough) because this makes to code
+harder to follow along with. If the lambda function is too long, then it should be split up into multiple
+functions that performs subtasks. It should also be clear what the lambda function need access to in
+order to fullfill its purpose.
+There must be a clear division of the program into different functions. Each of these functions must
+have a resonable name and a clear purpose. Functions that does more than one thing are usually
+harder to understand, so make sure that each function only fulfill one task (a function that need to
+take several steps will of course have more than one purpose, but in those cases it should call a seperate
+function for each task).
+Comments, where they occur, must describe the purpose of the code: comments should explain why
+the code is written as it is, it should not explain how the code does it (nor should the comment explain
+what the code does). An experienced programmer can understand what the code does and how it does
+it simply by reading the code, but understanding the why is much harder.
+Comments can be a good tool for increasing readability, but good code should be self-explanatory.
+So avoid comments if possible, it is always better to try and write understandable code. This is
+fortunately easier to do when working with the standard library, since each component have good,
+self-explanatory names.
